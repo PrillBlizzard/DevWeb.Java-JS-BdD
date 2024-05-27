@@ -1,4 +1,4 @@
--BDDpackage webserver;
+package webserver;
 
 import java.io.IOException;
 import java.io.OutputStream;
