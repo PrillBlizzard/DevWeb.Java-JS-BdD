@@ -1,0 +1,51 @@
+CREATE DATABASE polyNames_GC;
+USE polyNames_GC;
+
+CREATE TABLE Cartes (
+	id INT NOT NULL AUTO_INCREMENT,
+	contenu VARCHAR(50) NOT NULL,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE Indices (
+	id INT NOT NULL AUTO_INCREMENT,
+	contenu VARCHAR(50) NOT NULL,
+	nb_mot_corres INT,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE Joueurs (
+	id INT NOT NULL AUTO_INCREMENT,
+	nom VARCHAR(50) NOT NULL,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE Partie ( 
+	id INT NOT NULL AUTO_INCREMENT,
+	codeUnique INT ,
+	score INT NOT NULL DEFAULT 0,
+	PRIMARY KEY(id)
+);
+
+INSERT INTO Cartes (contenu) VALUES ("Ours");
+INSERT INTO Cartes (contenu) VALUES ("Programmeur");
+INSERT INTO Cartes (contenu) VALUES ("Gourde");
+INSERT INTO Cartes (contenu) VALUES ("Téléphone");
+INSERT INTO Cartes (contenu) VALUES ("Pigeon");
+
+INSERT INTO Cartes (contenu) VALUES ("Ingénieur");
+INSERT INTO Cartes (contenu) VALUES ("Professeur");
+INSERT INTO Cartes (contenu) VALUES ("Hiver");
+INSERT INTO Cartes (contenu) VALUES ("Été");
+INSERT INTO Cartes (contenu) VALUES ("Canicule");
+
+INSERT INTO Cartes (contenu) VALUES ("Blizzard");
+INSERT INTO Cartes (contenu) VALUES ("Ordinateur");
+INSERT INTO Cartes (contenu) VALUES ("Casque");
+INSERT INTO Cartes (contenu) VALUES ("Ecouteurs");
+INSERT INTO Cartes (contenu) VALUES ("Arbre");
+
+
+
+
+
